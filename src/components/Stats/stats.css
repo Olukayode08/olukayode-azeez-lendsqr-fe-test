@@ -1,0 +1,87 @@
+.user-main,
+.user-sidebar-close {
+  position: absolute;
+  left: 15%;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.header {
+  font-size: 27px;
+  color: #213f7d;
+  opacity: 0.87;
+  margin: 0 0 5px 10px;
+}
+
+.users-stat {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  margin: 10px;
+  justify-content: center;
+  width: 230px;
+  height: 140px;
+  background-color: #ffffff;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #545f7d;
+  margin: 15px 0;
+}
+
+h5 {
+  color: #213f7d;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.icon {
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.user {
+  color: #df18ff;
+}
+
+.active-user {
+  color: #5718ff;
+}
+
+.loans {
+  color: #755f44;
+}
+
+.savings {
+  color: #ff3366;
+}
+
+@media screen and (max-width: 700px) {
+  .users-stat {
+    align-items: center;
+    justify-content: center;
+  }
+  .users {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .user-main,
+.user-sidebar-close {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 95%;
+  }
+}/*# sourceMappingURL=stats.css.map */
