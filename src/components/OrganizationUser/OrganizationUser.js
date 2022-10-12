@@ -3,6 +3,7 @@ import './organizationUser.css';
 import { GlobalContext } from '../../context/Context';
 import { useNavigate } from 'react-router-dom';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
+import {FiStar} from 'react-icons/fi'
 const OrganizationUser = ({ id }) => {
   const { userDetails, company, fetchUser } = useContext(GlobalContext);
   let navigate = useNavigate();
@@ -40,12 +41,16 @@ const OrganizationUser = ({ id }) => {
               alt='lendsqr'
             />
             <div className='username-number'>
-              <p>{userDetails.userName}</p>
-              <p>{userDetails.phoneNumber}</p>
+              <p className='user-name'>{userDetails.userName}</p>
+              <p className='user-number'>{userDetails.phoneNumber}</p>
             </div>
             <div className='star-user'>
               <h4>Users Tier</h4>
-              <div></div>
+              <div className='stars'>
+                <FiStar className='star bg'/>
+                <FiStar className='star bg'/>
+                <FiStar className='star bg' />
+              </div>
             </div>
             <div className='user-account-balance'>
               <p>{userDetails.accountNumber}</p>

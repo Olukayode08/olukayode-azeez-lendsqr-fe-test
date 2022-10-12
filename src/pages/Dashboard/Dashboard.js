@@ -5,7 +5,6 @@ const Dashboard = () => {
     <div>
       <Stats />
       <Organization />
-      {/* <Pagination /> */}
     </div>
   );
 };

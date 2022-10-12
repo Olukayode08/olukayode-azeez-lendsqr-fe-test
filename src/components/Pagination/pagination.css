@@ -1,11 +1,8 @@
-.pagination-section {
-  position: fixed;
-  right: 100px;
-  bottom: 0;
-}
-
 .pagination {
+  position: absolute;
+  right: 50px;
   display: flex;
+  margin: 30px 0 0 0;
 }
 
 .paginate {
@@ -13,11 +10,10 @@
 }
 
 .page-no {
-  font-size: 11px;
+  font-size: 15px;
   line-height: 13px;
   color: #545f7d;
   padding: 7px;
-  border: 1px solid black;
   text-decoration: rgba(84, 95, 125, 0.15);
 }
 

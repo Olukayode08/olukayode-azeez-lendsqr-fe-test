@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GlobalContext } from '../../context/Context';
 import './organization.css';
+import Pagination from '../Pagination/Pagination';
+
 
 
 const Organization = () => {
@@ -36,6 +38,7 @@ const Organization = () => {
               </main>
             ))}
           </div>
+          <Pagination />
         </div>
     </>
   );

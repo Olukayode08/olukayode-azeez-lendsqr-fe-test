@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GlobalContext } from '../../context/Context';
+import Pagination from '../Pagination/Pagination';
 import './organizationUsers.css';
 
 const OrganizationUsers = () => {
@@ -130,6 +131,7 @@ const OrganizationUsers = () => {
             ))}
           </div>
         </div>
+        <Pagination />
       </div>
     </>
   );

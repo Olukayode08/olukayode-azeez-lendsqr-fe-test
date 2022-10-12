@@ -6,7 +6,6 @@ const Users = () => {
     <>
     <Stats />
     <OrganizationUsers />
-    <Pagination />
     
     </>
   )
