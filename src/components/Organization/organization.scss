@@ -9,7 +9,8 @@
     padding: 15px;
     width: 70%;
     margin: auto;
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
   .data-header {
     display: flex;
@@ -50,7 +51,7 @@
     text-align: left;
   }
   .data-email{
-    width: 220px;
+    width: 230px;
     flex-shrink: 0;
   }
   @media screen and (max-width: 1200px) {
@@ -59,7 +60,6 @@
     top: 360px;
     left: 0;
     width: 100%;
-    overflow: auto;
     margin: auto;
   }
 }

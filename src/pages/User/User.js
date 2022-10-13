@@ -1,6 +1,6 @@
 import React  from 'react'
 import {useParams} from 'react-router-dom'
-import {OrganizationUser} from '../../components';
+import {OrganizationUser, Sidebar} from '../../components';
 
 
 const User = () => {
@@ -8,6 +8,7 @@ const User = () => {
   return (
     <>
     <OrganizationUser id={id} />
+    <Sidebar />
     </>
   )
 }

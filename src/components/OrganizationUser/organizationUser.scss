@@ -1,33 +1,26 @@
   .user-data{
     position: absolute;
     top: 110px;
-    left: 190px;
-    padding: 15px;
+    left: 200px;
     display: flex;
     flex-direction: column;
     width: 85%;
-    margin: auto;
-    padding: 15px;
   }
   .users-back{
     display: flex;
     width: 250px;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     color: #213f7d;
     cursor: pointer;
     font-size: 22px;
     margin: 15px 0;
-    flex-shrink: 0;
   }
   .user-details{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 0;
     padding: 15px;
-    width: 100%;
-    overflow: auto;
   }
     .details-heading{
     color: #213f7d;
@@ -45,7 +38,6 @@
     padding: 10px;
     cursor: pointer;
     margin: 0 7px;
-    flex-shrink: 0;
   }
   .activate-user{
     color: #39cdcc;
@@ -53,32 +45,26 @@
     padding: 10px;
     margin: 0 7px;
     cursor: pointer;
-    flex-shrink: 0;
   }
   .user-profile{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #fff;
-    width: 100%;
-    height: 200px;
     padding: 15px 0;
-    overflow: auto;
   }
   .user-brief-profile{
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     margin: 20px 0;
-    width: 100%;
   }
   .avatar{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    flex-shrink: 0;
     padding: 10px 20px;
-
   }
   .star-user,
   .user-account-balance,
@@ -86,7 +72,6 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    flex-shrink: 0;
     color: #213f7d;
   }
   .user-name{
@@ -117,9 +102,9 @@
   }
   .full-details-header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
   }
   .underline-gen-info{
     display: flex;
@@ -130,46 +115,33 @@
   .general-info{
     color: #39cdcc;
     font-size: 17px;
-    flex-shrink: 0;
-    width: 180px;
-    margin-left: 10px;
+    padding: 5px;
+
   }
   .underline{
-    width: 180px;
     height: 2px;
-    flex-shrink: 0;
     background-color: #39cdcc;
   }
   .general-info-header{
     font-size: 17px;
-    flex-shrink: 0;
-    width: 180px;
     font-weight: 500;
+    text-align: center;
+    padding: 5px;
   }
   .user-full-profile{
     background-color: #fff;
-    margin: 30px 0;
-    font-size: 19px;
-    width: 100%;
-    overflow: auto;
+    margin: 30px 0 0 0;
   }
-
   .personal-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 30px 20px;
     border-bottom: 1px solid #213f7d;
-    height: 170px;
-    flex-shrink: 0;
-    width: 100%;
-    overflow: auto;
   }
   .personal-info-heading{
     font-size: 17px;
     color: #545f7d;
-    flex-shrink: 0;
-    width: 270px;
     padding: 10px;
   }
   .about{
@@ -181,39 +153,28 @@
     flex-direction: column;
     justify-content: center;
     padding: 10px 25px;
-    width: 200px;
-    flex-shrink: 0;
   }
   h6{
     font-size: 15px;
     color: #545f7d;
-    flex-shrink: 0;
-    width: 150px;
   }
   .info-detail{
     font-size: 14px;
     color: #213f7d;
-    flex-shrink: 0;
-    width: 240px;
   }
     @media screen and (max-width: 1200px) {
   .user-data {
     top: 170px;
     left: 0;
     width: 100%;
-    border: 1px solid #545f7d;
-    overflow: auto;
-    margin: auto;
+    margin: 0;
+    padding: 0;
   }
-  .user-full-profile,
   .user-profile{
     width: 100%;
-    overflow: auto;
-  }
-}
-  @media screen and (max-width: 1100px) {
-    .personal-info{
-    height: 220px;
+    margin: 20px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -221,7 +182,19 @@
   .user-data {
     top: 130px;
   }
-  .about{
-    flex-wrap: nowrap;
+  .user-details{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .details-heading{
+    margin-bottom: 7px;
+  }
+  .user-full-profile{
+    margin: 30px 0 0 0;
+    justify-content: center;
+  }
+  .full-details-header{
+    justify-content: center;
+
   }
 }
